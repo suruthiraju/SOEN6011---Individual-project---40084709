@@ -3,6 +3,8 @@
 \usepackage{geometry}
 \usepackage[canada]{babel}
 \usepackage[T1]{fontenc}
+\usepackage{algorithm}
+\usepackage{algorithmic}
  \geometry{
  a4paper,
  total={170mm,257mm},
@@ -23,12 +25,12 @@
 
 {\fontsize{12}{16}\selectfont This document is shows basic understanding on the functions that is used in Calculator: \\} 
 
-{\Large\textbf{Function:}\\}
+{\Large\textbf{1 Function:}\\}
 \newline
 \indent\indent
 {\fontsize{12}{16}\selectfont Given functionality for calculation is  a\textsuperscript{b \textsuperscript{x}}\\}
 
-{\Large\textbf{Definition:}\\}
+{\Large\textbf{2 Definition:}\\}
 \newline
 \indent\indent
 {\fontsize{12}{16}\selectfont As per the given function, a and b are real constants and x is a real variable. Real Constants are real number which can be positive, negative or zero, which are fixed values. Whereas Real variables are not fixed values, which may change due to environment. In this project we are calculating the a power of b and b power x. \\}
@@ -42,30 +44,30 @@
 \indent\indent
 {\fontsize{12}{16}\selectfont a \textsuperscript{c} = a*....*a which is c times \\}
 
-{\Large\textbf{Domain and Co-Domain of function:} \\}
+{\Large\textbf{3.Domain and Co-Domain of function:} \\}
 \newline
 \indent\indent
 {\fontsize{12}{16}\selectfont Domain of the power function depend upon value of the power x and b\textsuperscript{x} \\}
 \newline
 \indent\indent
-{\fontsize{12}{16}\selectfont Case 1: p is a non-negative integer = then domain is all real numbers  \\ }
+{\fontsize{12}{16}\selectfont Case 3.1: a is a non-negative integer = then domain is all real numbers  \\ }
 \newline
 \indent\indent
-{\fontsize{12}{16}\selectfont Case 2: p is a negative integer = then  domain is all real numbers not including zero  \\}
+{\fontsize{12}{16}\selectfont Case 3.2: a is a negative integer = then  domain is all real numbers not including zero  \\}
 
 
 \indent\indent
-{\fontsize{12}{16}\selectfont Case 3: p is a rational number in lowest terms as r/s and s is even = then when p>0 domain is non-negative real numbers, when p<0 domain is positive real numbers  \\}
+{\fontsize{12}{16}\selectfont Case 3.3: a is a rational number in lowest terms as r/s and s is even = then when a>0 domain is non-negative real numbers, when p<0 domain is positive real numbers  \\}
 
 
 \indent\indent
-{\fontsize{12}{16}\selectfont Case 4: p is a rational number in lowest terms as r/s and s is odd = then when p>0 domain is all real numbers, when p<0 domain is all real numbers not including zero  \\}
+{\fontsize{12}{16}\selectfont Case 3.4: a is a rational number in lowest terms as r/s and s is odd = then when a>0 domain is all real numbers, when a<0 domain is all real numbers not including zero  \\}
 
 
 \indent\indent
-{\fontsize{12}{16}\selectfont Case 5: p is an  irrational number = then when p>0 domain is all non-negative real numbers, when p<0 domain is all positive real numbers  \\}
+{\fontsize{12}{16}\selectfont Case 3.5: a is an  irrational number = then when a>0 domain is all non-negative real numbers, when a<0 domain is all positive real numbers  \\}
 
-{\Large\textbf{Characteristics:}\\}
+{\Large\textbf{4.Characteristics:}\\}
 \newline
 \indent\indent
 {\fontsize{12}{16}\selectfont The properties is known as Exponents power rule \\}
@@ -86,32 +88,167 @@
 \pagebreak
 
 \newpage
-{\Large\textbf{Requirements:}\\}
+{\Large\textbf{5.Requirements:}\\}
 \newline
 \indent\indent
-{\fontsize{12}{16}\selectfont Requirement 1: Constant a and b are non-negative integer \\}
+{\fontsize{12}{16}\selectfont Req 5.1: Constant a and b are non-negative integer \\}
 \newline
 \indent\indent
-{\fontsize{12}{16}\selectfont Requirement 2: Constant a is a negative integer. Constant b is a negative integer, when x!=0; \\}
+{\fontsize{12}{16}\selectfont Req 5.2: Constant a is a negative integer. Constant b is a negative integer, when x!=0; \\}
 \newline
 \indent\indent
-{\fontsize{12}{16}\selectfont Requirement 3: a is a rational number in lowest terms as b=r/s or x=r/s and s is even = then when a>0 domain is non-negative real numbers, when a<0 domain is positive real numbers\\}
+{\fontsize{12}{16}\selectfont Req 5.3: a is a rational number in lowest terms as b=r/s or x=r/s and s is even = then when a>0 domain is non-negative real numbers, when a<0 domain is positive real numbers\\}
 \newline
 \indent\indent
-{\fontsize{12}{16}\selectfont Requirement 4: a is a rational number in lowest terms as b=r/s or x=r/s and s is odd = then when a>0 domain is all real numbers, when a<0 domain is all real numbers not including zero \\}
+{\fontsize{12}{16}\selectfont Req 5.4: a is a rational number in lowest terms as b=r/s or x=r/s and s is odd = then when a>0 domain is all real numbers, when a<0 domain is all real numbers not including zero \\}
 \newline
 \indent\indent
-{\fontsize{12}{16}\selectfont Requirement 5: a is an  irrational number = then when a>0 domain is all non-negative real numbers, when a<0 domain is all positive real numbers \\}
+{\fontsize{12}{16}\selectfont Req 5.5: a is an  irrational number = then when a>0 domain is all non-negative real numbers, when a<0 domain is all positive real numbers \\}
 
-{\Large\textbf{Assumptions:}\\}
+{\Large\textbf{6.Assumptions:}\\}
 \newline
 \indent\indent
-{\fontsize{12}{16}\selectfont Assumption 1: The variable value x should not be negative when constant values are zero \\}
+{\fontsize{12}{16}\selectfont Assumption 6.1: The variable value x should not be negative when constant values are zero \\}
 \newline
 \indent\indent
-{\fontsize{12}{16}\selectfont Assumption 2: The variable value x should not be zero \\}
+{\fontsize{12}{16}\selectfont Assumption 6.2: The variable value x should not be zero \\}
 \newline
 \indent\indent
-{\fontsize{12}{16}\selectfont Assumption 3: The constant value a and b should not be zero \\}
+{\fontsize{12}{16}\selectfont Assumption 6.3: The constant value a and b should not be zero \\}
 
+{\Large\textbf{7.Pseudocode :}\\}
+\begin{algorithm}
+\caption{Calculate  a\textsuperscript{b \textsuperscript{x}} - for loop}
+\begin{algorithmic} 
+\REQUIRE $a > 0 \vee b > 0 \vee x \geq 0$
+\ENSURE $y = $ a\textsuperscript{b \textsuperscript{x}}
+\STATE $y \leftarrow 1$
+\STATE $z \leftarrow 1$
+\STATE $a \leftarrow input$
+\STATE $b \leftarrow input$
+\STATE $x \leftarrow input$
+\WHILE{x != 0}
+\STATE $z \leftarrow z*b$
+\STATE $x \leftarrow x-1$
+\ENDWHILE
+\WHILE{z != 0}
+\STATE $y \leftarrow y*a$
+\STATE $z \leftarrow z-1$
+\ENDWHILE
+\STATE $y = output$
+\end{algorithmic}
+\end{algorithm}
+\newline
+\indent\indent
+{\large{Technical Reason:}\\}
+\indent\indent\indent
+{\fontsize{12}{16}\selectfont - This algorithm is used for all whole numbers. I am using only integer value for this program/pseudocode.\\}
+\newline
+\indent\indent
+{\large{Advantage:}\\}
+\indent\indent\indent
+{\fontsize{12}{16}\selectfont - Easy to Understand and Calculate.\\}
+\indent\indent\indent
+{\fontsize{12}{16}\selectfont - Quick in Output.\\}
+\newline
+\indent\indent
+{\large{Disadvantage:}\\}
+\indent\indent\indent
+{\fontsize{12}{16}\selectfont - Can be used only for posivite and whole numbers.\\}
+\indent\indent\indent
+{\fontsize{12}{16}\selectfont - If number is big, looping takes long time.\\}
+\pagebreak
+\begin{algorithm}
+\caption{Calculate  a\textsuperscript{b \textsuperscript{x}} - function recursion }
+\begin{algorithmic} 
+\REQUIRE $a > 0 \vee b > 0 \vee x \geq 0$
+\ENSURE $y = $ a\textsuperscript{b \textsuperscript{x}}
+\STATE $y \leftarrow 1$
+\STATE $a \leftarrow input$
+\STATE $b \leftarrow input$
+\STATE $x \leftarrow input$
+\STATE $y \leftarrow FUNCTION(b,x)$
+\STATE $z \leftarrow FUNCTION(a,y)$
+\STATE $z = output $
+\STATE FUNCTION(b,x)
+\IF{$x == 0$}
+\RETURN 1
+\ENDIF
+\IF{$(x mod 2) == 0$}
+\RETURN FUNCTION(b,x/2) * FUNCTION(b,x/2)
+\ELSE
+\RETURN b* FUNCTION(b,x/2) * FUNCTION(b,x/2)
+\ENDIF\STATE FUNCTION(a,y)
+\IF{$y == 0$}
+\RETURN 1
+\ENDIF
+\IF{$(y mod 2) == 0$}
+\RETURN FUNCTION(a,y/2) * FUNCTION(a,y/2)
+\ELSE
+\RETURN a* FUNCTION(a,y/2) * FUNCTION(a,y/2)
+\ENDIF
+\end{algorithmic}
+\end{algorithm}
+\newline
+\indent\indent
+{\large{Technical Reason:}\\}
+\indent\indent\indent
+{\fontsize{12}{16}\selectfont - This algorithm is used for all whole numbers. I am using only integer value for this program/pseudocode.\\}
+\newline
+\indent\indent
+{\large{Advantage:}\\}
+\indent\indent\indent
+{\fontsize{12}{16}\selectfont - Easy to Understand and Calculate.\\}
+\indent\indent\indent
+{\fontsize{12}{16}\selectfont - Quick in Output.\\}
+\newline
+\indent\indent
+{\large{Disadvantage:}\\}
+\indent\indent\indent
+{\fontsize{12}{16}\selectfont - Can be used only for posivite and whole numbers.\\}
+\indent\indent\indent
+{\fontsize{12}{16}\selectfont - If number is big, looping takes long time.\\}
+
+\begin{algorithm}
+\caption{Calculate  a\textsuperscript{b \textsuperscript{x}} - Math pow() function}
+\begin{algorithmic} 
+\REQUIRE $ -x \leq a \geq x   \vee  -x \leq b \geq x \vee x \geq 0 \vee x = infinity $
+\ENSURE $y = $ a\textsuperscript{b \textsuperscript{x}}
+\STATE $y \leftarrow 1$
+\STATE $z \leftarrow 1$
+\STATE $a \leftarrow input$
+\STATE $b \leftarrow input$
+\STATE $x \leftarrow input$
+\STATE $y = Math.pow(b,x)$
+\STATE $z = Math.pow(a,y)$
+\STATE $z = output$
+\end{algorithmic}
+\end{algorithm}
+\newline
+\indent\indent
+{\large{Technical Reason:}\\}
+\indent\indent\indent
+{\fontsize{12}{16}\selectfont - This algorithm is used for all whole numbers including negative integers. I am using this code as part of math library present in Java, so that it can also be used for irrational values.\\}
+\newline
+\indent\indent
+{\large{Advantage:}\\}
+\indent\indent\indent
+{\fontsize{12}{16}\selectfont - can calculate for negative and irrational numbers.\\}
+\indent\indent\indent
+{\fontsize{12}{16}\selectfont - Quick in Output and easy to understand\\}
+\newline
+\indent\indent
+{\large{Disadvantage:}\\}
+\indent\indent\indent
+{\fontsize{12}{16}\selectfont - Function is inbuilt so changes cannot be made.\\}
+
+{\Large\textbf{REFERENCE:}\\}
+\indent\indent\indent
+{\fontsize{12}{16}\selectfont 1. Math-linux.com. (2019). How to write algorithm and pseudocode in Latex ?\usepackagealgorithm,\usepackage - math-linux.com. [online] Available at: https://math-linux.com/latex-26/faq/latex-faq/article/how-to-write-algorithm-and-pseudocode-in-latex-usepackage-algorithm-usepackage-algorithmic \\}
+
+\indent\indent\indent
+{\fontsize{12}{16}\selectfont 2. Biology.arizona.edu. (2019). BioMath: Power Functions. [online] Available at: http://www. biology.arizona.edu/biomath/tutorials/Power/Powerbasics.html [Accessed 19 Jul. 2019]. \\}
+
+\indent\indent\indent
+{\fontsize{12}{16}\selectfont 3. Oregonstate.edu. (2019). Power Functions. [online] Available at: https://oregonstate.edu/ instruct/mth251/cq/FieldGuide/power/lesson.html [Accessed 19 Jul. 2019]. \\}
 \end{document}
